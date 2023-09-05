@@ -45,6 +45,7 @@ inquirer
         const svgContent = makeSVG(answers);
 
         fs.writeFile('./lib/shapes.js', svgContent)
-        .then(() => console.log('File Created!'))
-        .catch ((err) => console.error(err))
+
     })
+    .then(() => console.log('File Created!'))
+    .catch((err) => console.error(err));
